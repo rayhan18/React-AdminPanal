@@ -1,8 +1,33 @@
 
-
+/* =============sidebar========== */
 .sidebarBg{
     background-color: rgb(22, 3, 73);
+    margin-top: -57px;
+    box-shadow: 2px 2px 2px 1px rgb(5 37 101 / 57%);
+       height: 710px;
 }
+.admin{
+     width: 28px;
+    border-radius: 50%;
+    border: 2px solid royalblue;
+        margin-bottom: 10px;
+}
+
+   .sidebar-title{
+      margin-top: 10px;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    color:white;
+}
+   
+
+/* =============navebar========== */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
+   background-color: #0a3794!important;
+}
+.navStyle{
+   
+  
+    box-shadow: 2px 2px 2px 1px rgb(5 37 101 / 57%);
+   
 }
