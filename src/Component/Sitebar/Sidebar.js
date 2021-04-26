@@ -1,16 +1,20 @@
-import React, { Component, Fragment } from 'react'
-import {Tab,Row,Col,Container,Nav} from 'react-bootstrap'
-import '../Style/Style.css'
-import admin  from '../Images/eahyaimg.jpg'
-import star from '../Images/star.png'
+import React, { Component, Fragment } from 'react';
+import {Tab,Row,Col,Container,Nav} from 'react-bootstrap';
+import '../Style/Style.css';
+import admin  from '../Images/eahyaimg.jpg';
+import star from '../Images/star.png';
+
 import { FaHome ,} from 'react-icons/fa';
 import { BsCalendarFill,BsCircleHalf,BsFillPeopleFill ,
 BsFillPersonLinesFill,BsCardChecklist,BsCalendar,BsGraphUp,BsGear} from "react-icons/bs";
+import NewOrderTable from '../SidebarContent/NewOrderTable';
+
+import VisitorRating from '../SidebarContent/VisitorRating';
 
 
 export default class Sidebar extends Component {
     render() {
-       document.title="Home"
+       document.title="Home";
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -33,7 +37,7 @@ export default class Sidebar extends Component {
                                 </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                <Nav.Link eventKey="thard"><BsCircleHalf/> Bounce rate</Nav.Link>
+                                <Nav.Link eventKey="thard"><BsCircleHalf/> Visitor Rating</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                 <Nav.Link eventKey="fourth"><BsFillPersonLinesFill/> User registration</Nav.Link>
@@ -62,10 +66,15 @@ export default class Sidebar extends Component {
                                     <li>Home</li>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <li>New order</li>
+                                  <h4 className="text-center bg-primary p-2 text-white">Order List</h4>
+                                    <NewOrderTable/>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="thard">
-                              <li>list 2</li>
+                                <h4 className="text-center bg-primary p-2 text-white">Visitor Rating</h4>
+                                
+                                <VisitorRating/>
+                                
+                                
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="fourth">
                               <li>list 3</li>
