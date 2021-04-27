@@ -10,6 +10,9 @@ BsFillPersonLinesFill,BsCardChecklist,BsCalendar,BsGraphUp,BsGear} from "react-i
 import NewOrderTable from '../SidebarContent/NewOrderTable';
 
 import VisitorRating from '../SidebarContent/VisitorRating';
+import PieChart from '../SidebarContent/PieChart';
+import LineChart from '../SidebarContent/LineChart';
+
 
 
 export default class Sidebar extends Component {
@@ -37,27 +40,34 @@ export default class Sidebar extends Component {
                                 </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                <Nav.Link eventKey="thard"><BsCircleHalf/> Visitor Rating</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                <Nav.Link eventKey="fourth"><BsFillPersonLinesFill/> User registration</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                <Nav.Link eventKey="fifth"><BsFillPeopleFill/> Unic visitor</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                <Nav.Link eventKey="six"><BsCalendar/> Calender</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                <Nav.Link eventKey="seven"><BsGraphUp/> Sales graph</Nav.Link>
+                                <Nav.Link eventKey="thard"><BsCircleHalf/> Visitor Rating</Nav.Link>                        
                                 </Nav.Item>
                                 
                                 <Nav.Item>
-                                <Nav.Link eventKey="eight"><BsCardChecklist/> Todo list</Nav.Link>
+                                <Nav.Link eventKey="forth"><BsCircleHalf/> Pie Chart</Nav.Link>                        
                                 </Nav.Item>
                                 <Nav.Item>
-                                <Nav.Link eventKey="nine"> <BsGear/> Setings</Nav.Link>
+                                <Nav.Link eventKey="five"><BsCircleHalf/> Line Chart</Nav.Link>                        
                                 </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="six"><BsFillPersonLinesFill/> User Information</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="seven"><BsFillPeopleFill/> Unic visitor</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="eight"><BsCalendar/> Calender</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="nine"><BsGraphUp/> Sales graph</Nav.Link>
+                                </Nav.Item>
+                                
+                                <Nav.Item>
+                                <Nav.Link eventKey="ten"><BsCardChecklist/> Todo list</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                <Nav.Link eventKey="eleven"> <BsGear/> Setings</Nav.Link>
+                                </Nav.Item> 
                             </Nav>
                             </Col>
                             <Col sm={10}>
@@ -73,27 +83,34 @@ export default class Sidebar extends Component {
                                 <h4 className="text-center bg-primary p-2 text-white">Visitor Rating</h4>
                                 
                                 <VisitorRating/>
-                                
-                                
+                               
+                              
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="fourth">
-                              <li>list 3</li>
+                                <Tab.Pane eventKey="forth">
+                                <h4 className="text-center bg-primary p-2 text-white">Visitor Rating</h4>
+                                <PieChart/>
+                                <li></li>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="fifth">
-                              <li>list 4</li>
+                           <Tab.Pane eventKey="five">
+                                <h4 className="text-center bg-primary p-2 text-white">Visitor Rating</h4>
+                                <LineChart/>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="six">
-                              <li>list 5</li>
+                                <h4 className="text-center bg-primary p-2 text-white">User List</h4>
+                                
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="seven">
-                              <li>list 6</li>
-                                </Tab.Pane>
-                                 <Tab.Pane eventKey="eight">
                               <li>list 7</li>
                                 </Tab.Pane>
-                                 <Tab.Pane eventKey="nine">
+                                 <Tab.Pane eventKey="eight">
                               <li>list 8</li>
                                 </Tab.Pane>
+                                 <Tab.Pane eventKey="nine">
+                              <li>list 9</li>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="nine">
+                              <li>list 10</li>
+                                </Tab.Pane> 
                             </Tab.Content>
                             </Col>
 

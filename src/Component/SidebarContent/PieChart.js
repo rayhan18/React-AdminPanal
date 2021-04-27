@@ -1,15 +1,15 @@
 import React from 'react'
-import {Bar}from 'react-chartjs-2'
+import {Pie}from 'react-chartjs-2'
 //https://www.npmjs.com/package/react-chartjs-2//
 
-const VisitorRating =()=>{
+const PieChart =()=>{
   
   return (
     <div>
-      <Bar
+      <Pie
      
       data={{
-        type:'Bar',
+        type:'pie',
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','Jul','Aug','Sep','Oct','Nov','Dic'],
         datasets:[
           {
@@ -72,4 +72,4 @@ const VisitorRating =()=>{
     </div>
   )
 }
-export default VisitorRating; 
+export default PieChart; 
