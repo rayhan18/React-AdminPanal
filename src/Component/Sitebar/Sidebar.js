@@ -12,6 +12,8 @@ import NewOrderTable from '../SidebarContent/NewOrderTable';
 import VisitorRating from '../SidebarContent/VisitorRating';
 import PieChart from '../SidebarContent/PieChart';
 import LineChart from '../SidebarContent/LineChart';
+import Userinfo from './UserInfo/Userinfo';
+import Calender from '../Celender/Calender';
 
 
 
@@ -57,6 +59,7 @@ export default class Sidebar extends Component {
                                 </Nav.Item>
                                 <Nav.Item>
                                 <Nav.Link eventKey="eight"><BsCalendar/> Calender</Nav.Link>
+                               
                                 </Nav.Item>
                                 <Nav.Item>
                                 <Nav.Link eventKey="nine"><BsGraphUp/> Sales graph</Nav.Link>
@@ -97,13 +100,13 @@ export default class Sidebar extends Component {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="six">
                                 <h4 className="text-center bg-primary p-2 text-white">User List</h4>
-                                
+                                 <Userinfo/>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="seven">
-                              <li>list 7</li>
+                                
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="eight">
-                              <li>list 8</li>
+                                 <Calender/>
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="nine">
                               <li>list 9</li>
