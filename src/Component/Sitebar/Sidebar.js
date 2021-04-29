@@ -14,7 +14,8 @@ import PieChart from '../SidebarContent/PieChart';
 import LineChart from '../SidebarContent/LineChart';
 import Userinfo from './UserInfo/Userinfo';
 import Calender from '../Celender/Calender';
-
+import SelsGraph from '../SidebarContent/SelsGraph';
+import TodoForm from '../TodoList/TodoForm';
 
 
 export default class Sidebar extends Component {
@@ -106,13 +107,15 @@ export default class Sidebar extends Component {
                                 
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="eight">
+                                 <h4 className="text-center bg-primary p-2 text-white">Calender</h4>
                                  <Calender/>
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="nine">
-                              <li>list 9</li>
+                                 <h4 className="text-center bg-primary p-2 text-white">Sales Graph</h4>
+                              <SelsGraph/>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="nine">
-                              <li>list 10</li>
+                                <Tab.Pane eventKey="ten">
+                              <TodoForm/>
                                 </Tab.Pane> 
                             </Tab.Content>
                             </Col>
