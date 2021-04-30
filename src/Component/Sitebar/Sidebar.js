@@ -15,7 +15,8 @@ import LineChart from '../SidebarContent/LineChart';
 import Userinfo from './UserInfo/Userinfo';
 import Calender from '../Celender/Calender';
 import SelsGraph from '../SidebarContent/SelsGraph';
-import TodoForm from '../TodoList/TodoForm';
+
+import TodoList from '../TodoList/TodoList';
 
 
 export default class Sidebar extends Component {
@@ -115,7 +116,7 @@ export default class Sidebar extends Component {
                               <SelsGraph/>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="ten">
-                              <TodoForm/>
+                              <TodoList/>
                                 </Tab.Pane> 
                             </Tab.Content>
                             </Col>
