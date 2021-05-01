@@ -17,6 +17,8 @@ import Calender from '../Celender/Calender';
 import SelsGraph from '../SidebarContent/SelsGraph';
 
 import TodoList from '../TodoList/TodoList';
+import MapChart from '../SidebarContent/MapChart';
+import SankiDyagram from '../SidebarContent/SankiDyagram';
 
 
 export default class Sidebar extends Component {
@@ -105,7 +107,8 @@ export default class Sidebar extends Component {
                                  <Userinfo/>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="seven">
-                                
+                                <h4 className="text-center bg-primary p-2 text-white">Visitor Tracking</h4>
+                                {/* <SankiDyagram/> */}
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="eight">
                                  <h4 className="text-center bg-primary p-2 text-white">Calender</h4>
@@ -115,7 +118,8 @@ export default class Sidebar extends Component {
                                  <h4 className="text-center bg-primary p-2 text-white">Sales Graph</h4>
                               <SelsGraph/>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="ten">
+                                <Tab.Pane eventKey="ten" >
+                                <h4 className="text-center bg-primary p-2 text-white">Todo List</h4>
                               <TodoList/>
                                 </Tab.Pane> 
                             </Tab.Content>
