@@ -10,6 +10,7 @@
     "bootstrap": "^4.6.0",
     "chart.js": "^3.2.0",
     "fusioncharts": "^3.17.0",
+    "fusionmaps": "^3.17.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-calendar": "^3.4.0",

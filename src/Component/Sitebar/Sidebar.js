@@ -17,8 +17,8 @@ import Calender from '../Celender/Calender';
 import SelsGraph from '../SidebarContent/SelsGraph';
 
 import TodoList from '../TodoList/TodoList';
-import MapChart from '../SidebarContent/MapChart';
-import SankiDyagram from '../SidebarContent/SankiDyagram';
+
+
 
 
 export default class Sidebar extends Component {
@@ -73,7 +73,7 @@ export default class Sidebar extends Component {
                                 <Nav.Link eventKey="ten"><BsCardChecklist/> Todo list</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                <Nav.Link eventKey="eleven"> <BsGear/> Setings</Nav.Link>
+                                <Nav.Link eventKey="eleven"> <BsGear/> Settings</Nav.Link>
                                 </Nav.Item> 
                             </Nav>
                             </Col>
@@ -108,7 +108,7 @@ export default class Sidebar extends Component {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="seven">
                                 <h4 className="text-center bg-primary p-2 text-white">Visitor Tracking</h4>
-                                {/* <SankiDyagram/> */}
+                                {/* <MapChart/> */}
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="eight">
                                  <h4 className="text-center bg-primary p-2 text-white">Calender</h4>
