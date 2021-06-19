@@ -7,7 +7,7 @@ export default class Fotter extends Component {
         }
         return (
             <div>
-               <Navbar collapseOnSelect expand="lg" style={{ marginLeft:'234px',marginTop:'-55px', backgroundColor: '#0a3794'}}>
+               <Navbar collapseOnSelect expand="lg" style={{ marginLeft:'234px', backgroundColor: '#0a3794'}}>
                 <Navbar.Brand href="#home"></Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

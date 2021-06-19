@@ -1,14 +1,15 @@
 import React, { Component,Fragment } from 'react'
 import { Container, Row,Col,Card } from 'react-bootstrap'
 import { AiOutlineDoubleRight } from "react-icons/ai";
-import {Link} from 'react-router-dom'
+import PieChart from './PieChart';
+
 export default class Home extends Component {
     render() {
         return (
             <Fragment>
                 <Container fluit={true}>
                     <Row className = "mt-5">
-                        <Link to="/">
+                       
                         <Col sm='12' md ='3' lg='3'>
                         <Card border="primary" className="bg-primary" style={{ width: '16rem' }}>
                                 
@@ -21,7 +22,7 @@ export default class Home extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
-                        </Link>
+                       
                         <Col sm='12' md ='3' lg='3'>
                         <Card border="primary" className="bg-success" style={{ width: '16rem' }}>
                                 
@@ -61,6 +62,10 @@ export default class Home extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <div className = "mt-3">
+                <PieChart/>
+                </div>
+               
             </Fragment>
         )
     }
