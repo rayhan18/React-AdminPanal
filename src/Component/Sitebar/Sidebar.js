@@ -16,6 +16,9 @@ import Calender from '../Celender/Calender';
 import SelsGraph from '../SidebarContent/SelsGraph';
 import TodoList from '../TodoList/TodoList';
 import Home from '../SidebarContent/Home';
+import VisitorTracking from '../SidebarContent/VisitorTracking';
+import Wigets from '../SidebarContent/Wigets';
+import MailBox from '../SidebarContent/MailBox';
 
 
 
@@ -26,11 +29,11 @@ export default class Sidebar extends Component {
         return (
             <Fragment>
                 <Container fluid={true}>
-                <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <Tab.Container id="left-tabs-example" fixed="bottom" defaultActiveKey="first">
                         <Row>
                             <Col  sm={2} className="border sidebarBg">
                             <div>
-                             <h5 className="sidebar-title "><img className="admin" src={star} alt="admin" /> C.Name</h5>
+                             <h5 className="sidebar-title "><img className="admin" src={star} alt="admin" /> Bussiness Time</h5>
                              <h5 className="text-white border-bottom"><img className="admin" src={admin} alt="admin" /> Admin</h5>
                             </div>
                                
@@ -72,7 +75,13 @@ export default class Sidebar extends Component {
                                 <Nav.Link eventKey="ten"><BsCardChecklist/> Todo list</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                <Nav.Link eventKey="eleven"> <BsGear/> Settings</Nav.Link>
+                                <Nav.Link eventKey="eleven"> <BsGear/> Widgets</Nav.Link>
+                                </Nav.Item> 
+                                <Nav.Item>
+                                <Nav.Link eventKey="twelve"> <BsGear/> MailBox</Nav.Link>
+                                </Nav.Item> 
+                                <Nav.Item>
+                                <Nav.Link eventKey="thertin"> <BsGear/> Settings</Nav.Link>
                                 </Nav.Item> 
                             </Nav>
                             </Col>
@@ -107,7 +116,7 @@ export default class Sidebar extends Component {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="seven">
                                 <h4 className="text-center bg-primary p-2 text-white">Visitor Tracking</h4>
-                                {/* <MapChart/> */}
+                               <VisitorTracking/>
                                 </Tab.Pane>
                                  <Tab.Pane eventKey="eight">
                                  <h4 className="text-center bg-primary p-2 text-white">Calender</h4>
@@ -120,6 +129,18 @@ export default class Sidebar extends Component {
                                 <Tab.Pane eventKey="ten" >
                                 <h4 className="text-center bg-primary p-2 text-white">Todo List</h4>
                               <TodoList/>
+                                </Tab.Pane> 
+                                <Tab.Pane eventKey="eleven" >
+                                <h4 className="text-center bg-primary p-2 text-white">Wigets</h4>
+                                  <Wigets/>
+                                </Tab.Pane> 
+                                <Tab.Pane eventKey="twelve" >
+                                <MailBox/>
+                             
+                                </Tab.Pane> 
+                                <Tab.Pane eventKey="thertin" >
+                                <h4 className="text-center bg-primary p-2 text-white">Setings</h4>
+                              <h3>Setings</h3>
                                 </Tab.Pane> 
                             </Tab.Content>
                             </Col>

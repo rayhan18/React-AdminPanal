@@ -171,3 +171,33 @@
     color: #fff;
     border: 1px solid white;
   }
+ 
+    .wigetsCart{
+      box-shadow: -1px 16px 38px 0px rgba(0,0,0,0.5);
+      -webkit-box-shadow: -1px 16px 38px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: -1px 16px 38px 0px rgba(0,0,0,0.5);
+      border: 2px solid #d1d1d2fa;
+    background: #0c266ffa;
+    padding: 10px;
+    }
+    .progress {
+      display: flex;
+      height: 0.2rem !important;
+      overflow: hidden;
+      line-height: 0;
+      font-size: .75rem;
+      background-color: #e9ecef;
+      border-radius: .25rem;
+  }
+  .iconStyle{
+    color: #d2e3fc;
+    
+    font-size: 42px;
+    margin-right: 10px;
+}
+  .tablestyle{
+    box-shadow: 21px 16px 15px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 21px 16px 15px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 21px 16px 15px -7px rgba(0,0,0,0.75);
+  }
+  
