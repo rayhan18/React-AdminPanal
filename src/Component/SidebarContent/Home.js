@@ -62,7 +62,7 @@ export default class Home extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <div className = "mt-3">
+                <div className = "mt-3 "style={{marginBottom:"100px"}}>
                 <PieChart/>
                 </div>
                

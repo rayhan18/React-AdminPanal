@@ -200,4 +200,34 @@
 -webkit-box-shadow: 21px 16px 15px -7px rgba(0,0,0,0.75);
 -moz-box-shadow: 21px 16px 15px -7px rgba(0,0,0,0.75);
   }
-  
+  /* //login  */
+  .loginForm{
+    border: 1px solid #ece3e3;
+    padding: 20px;
+}
+  .loginimg{
+    
+    background-image: url('../Images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+  .logintext{
+    text-align: center;
+    margin-top: 50%;
+    color: darkblue;
+    font-family: serif;
+    text-shadow: 4px 2px 7px rgba(0,0,0,0.6);
+    
+  }
+  .loginContainer{
+    background-image: url('../Images/bg.jpg');
+    padding: 50px;
+  }
+  .logintext2{
+    text-align: center;
+    color: rgb(194, 194, 212);
+    font-family: serif;
+    text-shadow: 4px 2px 7px rgba(0,0,0,0.6);
+    
+  }

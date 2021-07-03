@@ -19,6 +19,7 @@ import Home from '../SidebarContent/Home';
 import VisitorTracking from '../SidebarContent/VisitorTracking';
 import Wigets from '../SidebarContent/Wigets';
 import MailBox from '../SidebarContent/MailBox';
+import Login from '../SidebarContent/Login';
 
 
 
@@ -81,7 +82,13 @@ export default class Sidebar extends Component {
                                 <Nav.Link eventKey="twelve"> <BsGear/> MailBox</Nav.Link>
                                 </Nav.Item> 
                                 <Nav.Item>
-                                <Nav.Link eventKey="thertin"> <BsGear/> Settings</Nav.Link>
+                                <Nav.Link eventKey="thertin"> <BsGear/> Login</Nav.Link>
+                                </Nav.Item> 
+                                <Nav.Item>
+                                <Nav.Link eventKey="fortin"> <BsGear/> Register</Nav.Link>
+                                </Nav.Item> 
+                                <Nav.Item>
+                                <Nav.Link eventKey="fiftin"> <BsGear/> Settings</Nav.Link>
                                 </Nav.Item> 
                             </Nav>
                             </Col>
@@ -139,6 +146,14 @@ export default class Sidebar extends Component {
                              
                                 </Tab.Pane> 
                                 <Tab.Pane eventKey="thertin" >
+                                <h4 className="text-center bg-primary p-2 text-white">Login</h4>
+                             <Login/>
+                                </Tab.Pane> 
+                                <Tab.Pane eventKey="fortin" >
+                                <h4 className="text-center bg-primary p-2 text-white">Register</h4>
+                              <h3>Setings</h3>
+                                </Tab.Pane> 
+                                <Tab.Pane eventKey="fiftin" >
                                 <h4 className="text-center bg-primary p-2 text-white">Setings</h4>
                               <h3>Setings</h3>
                                 </Tab.Pane> 
